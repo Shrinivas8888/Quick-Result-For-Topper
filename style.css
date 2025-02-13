@@ -1,0 +1,207 @@
+body {
+    background-image: url('bac.jpg');
+    background-size: 100% 100%;  /* Set width and height as percentages */
+    background-position: center;
+    height: 100vh;
+}
+
+.title-container {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.title {
+    display: inline-block;
+    font-size: 4rem;  /* Large font size */
+    color: black;   /* Stylish color (green) */
+    font-style: oblique;
+    font-weight: 700;  /* Make the font bold */
+    text-shadow: 4px 4px 10px red; /* Add shadow for effect */
+    letter-spacing: 2px; /* Slight space between letters for a better look */
+    animation: lightning-background 1.5s infinite alternate, lightning-text 1s infinite alternate; /* Apply animation */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Soft glow around the container */
+}
+
+/* Global styling */
+
+/* Center the container for both registration and login forms */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Form label and input styles */
+label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer or additional text styles (if any) */
+.footer-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+}
+
+.container{
+    top: 10rem;
+    max-width: 400px;  /* Set the desired width */
+    margin: 0 auto;    /* Center the form horizontally */
+    padding: 10px;
+    position: relative;
+    top: 2rem;
+   
+}
+
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsive design for medium-sized screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
+
+/* Responsive design for large screens (desktops) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 700px;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 4.5rem;
+    }
+}
+
+/* Keyframes for lightning background effect */
+@keyframes lightning-background {
+    0% {
+        background-color: #333; /* Normal background */
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff; /* Glow effect */
+    }
+    25% {
+        background-color: #111; /* Darker background */
+        box-shadow: 0 0 30px #ffff00, 0 0 50px #fffa00, 0 0 100px #ffff00; /* Strong yellow glow */
+    }
+    50% {
+        background-color: #222; /* Slightly brighter background */
+        box-shadow: 0 0 15px #ffffff, 0 0 25px #fffa00, 0 0 35px #ffff00; /* Glowing effect */
+    }
+    75% {
+        background-color: #333; /* Returning to the original color */
+        box-shadow: 0 0 40px #ffffff, 0 0 60px #ffff00, 0 0 80px #ffff00; /* Strong glow effect */
+    }
+    100% {
+        background-color: #444; /* Darkened background again */
+        box-shadow: 0 0 20px #ffffff, 0 0 30px #fffa00, 0 0 50px #ffff00; /* Glowing effect */
+    }
+}
+
+/* Keyframes for lightning text effect */
+@keyframes lightning-text {
+    0% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff; /* Soft glow */
+        color: #fffa00; /* Yellow text */
+    }
+    25% {
+        text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #fffa00; /* Glowing yellow */
+        color: #ff0000; /* Red (intense flash) */
+    }
+    50% {
+        text-shadow: 0 0 15px #ffffff, 0 0 25px #fffa00, 0 0 35px #ffff00; /* Strong flash */
+        color: #fffa00; /* Yellow */
+    }
+    75% {
+        text-shadow: 0 0 20px #ffff00, 0 0 40px #fffa00, 0 0 50px #ffff00; /* Bright flash */
+        color: #ff0000; /* Red (bright flash) */
+    }
+    100% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #fffa00, 0 0 15px #ffff00; /* Soft glow */
+        color: #ffffff; /* White text */
+    }
+}
+
+.centex{
+    position: relative;
+    top: 10rem;
+    right:0%;
+}
